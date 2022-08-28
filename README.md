@@ -1,7 +1,9 @@
 # Capacitor Read Native Setting
 
 A simple plugin to read a string from Info.plist on iOS and strings.xml on Android
+
 forked from ingageco/capacitor-read-native-setting at https://github.com/ingageco/capacitor-read-native-setting
+
 Works with  @capacitor/core@"^4.0.0"
 
 ## Supported platforms
