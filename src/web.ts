@@ -1,23 +1,11 @@
 import { WebPlugin } from '@capacitor/core';
-import { CapacitorReadNativeSettingPlugin } from './definitions';
 
-export class CapacitorReadNativeSettingWeb extends WebPlugin implements CapacitorReadNativeSettingPlugin {
-  constructor() {
-    super({
-      name: 'CapacitorReadNativeSetting',
-      platforms: ['web'],
-    });
-  }
+import type { CapacitorReadKeyPlugin } from './definitions';
 
-  async read(options: { key: string }): Promise<{ key: string }> {
-    console.log('VAL', options);
-    return options;
-  }
+export class CapacitorReadKeyWeb extends WebPlugin implements CapacitorReadKeyPlugin {
+  
+    async read(options: { key: string }): Promise<{ key: string }> {
+        console.log('VALUE', options);
+        return options;
+    }
 }
-
-const CapacitorReadNativeSetting = new CapacitorReadNativeSettingWeb();
-
-export { CapacitorReadNativeSetting };
-
-import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(CapacitorReadNativeSetting);
