@@ -1,65 +1,37 @@
-# Capacitor Read Native Setting
+# @varsitysoftware/capacitor-plugin-read-key
 
-A simple plugin to read a string from Info.plist on iOS and strings.xml on Android
+A simple plugin to read a string from info.plist or strings.xml
 
-forked from ingageco/capacitor-read-native-setting at https://github.com/ingageco/capacitor-read-native-setting
-
-Works with  @capacitor/core@"^4.0.0"
-
-## Supported platforms
-
-- Android
-- iOS
-
-## Installation
-
-Current release
+## Install
 
 ```bash
-npm install capacitor-read-native-setting
+npm install @varsitysoftware/capacitor-plugin-read-key
+npx cap sync
 ```
 
-## iOS
+## API
 
-Run:
-```bash
-npx cap sync ios
+<docgen-index>
+
+* [`read(...)`](#read)
+
+</docgen-index>
+
+<docgen-api>
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### read(...)
+
+```typescript
+read(options: { key: string; }) => Promise<{ key: string; }>
 ```
 
-## Android
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ key: string; }</code> |
 
-After you install the plugin, locate your MainActivity.java (can be found in /android/app/src/main/java/path/to/my/app/MainActivity.java)
+**Returns:** <code>Promise&lt;{ key: string; }&gt;</code>
 
-Import the class and add
+--------------------
 
-```java
-// import thhe class
-import com.ingageco.readnativesetting.CapacitorReadNativeSetting;
-
-// add class inside bridge activity:
-add(CapacitorReadNativeSetting.class);
-```
-
-Finally, run:
-```bash
-npx cap sync android
-```
-
-## Importing the Plugin
-
-At the top of your file import Capacitor Plugins and this extract this plugin
-
-```javascript
-import { Plugins } from '@capacitor/core';
-const { CapacitorReadNativeSetting } = Plugins;
-```
-
-## Methods
-
-- Retrieve a string by key
-```javascript
-CapacitorReadNativeSetting.read({ key: 'STRING_KEY_NAME'})
-.then((res) => {
-    // print the value of the setting
-    // res.value
-});
+</docgen-api>
