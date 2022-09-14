@@ -34,7 +34,7 @@ public class CapacitorReadKeyPlugin extends Plugin {
         //ret.put("value", value);
         //call.success(ret);
 
-        ret.put("value", implementation.echo(value));        
+        ret.put("value", implementation.read(value));        
         call.resolve(ret);
     }
 }
