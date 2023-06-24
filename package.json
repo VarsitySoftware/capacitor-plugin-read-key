@@ -1,6 +1,6 @@
 {
   "name": "@varsitysoftware/capacitor-plugin-read-key",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A simple plugin to read a string from info.plist or strings.xml",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@capacitor/android": "^4.0.0",
-    "@capacitor/core": "^4.0.0",
+    "@capacitor/core": "^5.0.0",
     "@capacitor/docgen": "^0.0.18",
     "@capacitor/ios": "^4.0.0",
     "@ionic/eslint-config": "^0.3.0",
