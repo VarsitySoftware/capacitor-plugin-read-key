@@ -1,6 +1,6 @@
 {
   "name": "capacitor-plugin-read-key",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Read native settings",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
