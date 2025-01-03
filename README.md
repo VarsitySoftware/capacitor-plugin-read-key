@@ -1,6 +1,6 @@
 # @varsitysoftware/capacitor-plugin-read-key
 
-A simple plugin to read a string from info.plist or strings.xml
+A simple plugin to read a string from info.plist or strings.xml - TEST
 
 ## Install
 
